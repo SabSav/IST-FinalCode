@@ -13,7 +13,7 @@ Organoids
             DiffetentShape: simulations for different geometrical parameters
                 DifferentLength
                 DifferentRadius
-
+    
         ## Plots Apical Length function of position (z axis):
 
             ```
@@ -106,47 +106,47 @@ Organoids
             python ConfigVisual.py
             python Plots.py
         ```
- ```           
+            
 
-## Run Lutolf simulation for Different Density (deterministic)
+    ## Run Lutolf simulation for Different Density (deterministic)
 
     ```
     sbatch --array=0-14 batchLutolfDensity
     ```
-## Run Lutolf simulation for Different Density (noise)
+    ## Run Lutolf simulation for Different Density (noise)
 
     ```
     sbatch --array=0-4 batchLutolfNoiseDensity
     ```
 
-## Run Lutolf simulation for Different Length (deterministic)
+    ## Run Lutolf simulation for Different Length (deterministic)
 
     ```
     sbatch --array=0-14 batchLutolfLength
     ```
-## Run Lutolf simulation for Different Length (noise)
+    ## Run Lutolf simulation for Different Length (noise)
 
     ```
     sbatch --array=0-4 batchLutolfNoiseLength
     ```
 
-## Run Lutolf simulation for Different Radius (deterministic)
+    ## Run Lutolf simulation for Different Radius (deterministic)
 
     ```
     sbatch --array=0-14 batchLutolfRadius
     ```
-## Run Lutolf simulation for Different Length (noise)
+    ## Run Lutolf simulation for Different Length (noise)
 
     ```
     sbatch --array=0-4 batchLutolfNoiseRadius
     ```
 
-## Run Round simulation for Different Radius (deterministic)
+    ## Run Round simulation for Different Radius (deterministic)
 
     ```
     sbatch --array=0-4 batchLutolfNoiseRadius
     ```
-
+```
 
 ```
 Wavy
@@ -166,3 +166,5 @@ Wavy
     ```
     python Plots.py
     ```
+
+```
