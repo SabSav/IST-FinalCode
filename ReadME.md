@@ -13,8 +13,8 @@ Organoids
             DiffetentShape: simulations for different geometrical parameters
                 DifferentLength
                 DifferentRadius
-    
-        ## Plots Apical Length function of position (z axis):
+
+            ## Plots Apical Length function of position (z axis):
 
             ```
             python PlotsALz.py
@@ -155,7 +155,7 @@ Wavy
     Wavelenght: simulations for different values of wavelenght               
 ```
 
-## Run simulation
+    ## Run simulation
 
     ```
     python SimulateSinusoidal1D.py
