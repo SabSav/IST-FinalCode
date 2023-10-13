@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name=Cylinder
+#SBATCH --output=array_%A-%a.log
+#SBATCH -c 64 # Number of cpus in node
+#SBATCH --time=48:00:00
+#SBATCH --mem 32G
+#SBATCH --no-requeue
+#SBATCH --export=NONE
+unset SLURM_EXPORT_ENV
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=sabrina.savino@ist.ac.at
+
+# Prologue
+module load python
+srun python SimulateCylinderArray.py -i "[${SLURM_ARRAY_TASK_ID}]"
